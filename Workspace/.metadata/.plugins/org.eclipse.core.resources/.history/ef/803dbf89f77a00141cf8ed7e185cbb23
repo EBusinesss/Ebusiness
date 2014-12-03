@@ -1,0 +1,39 @@
+package entitees;
+
+import java.io.Serializable;
+import java.lang.String;
+import javax.persistence.*;
+
+/**
+ * Entity implementation class for Entity: Commande
+ *
+ */
+@Entity
+
+public class Commande implements Serializable {
+
+	   
+	@Id
+	private int idCommande;
+	private String numCommande;
+	private static final long serialVersionUID = 1L;
+
+	public Commande() {
+		super();
+	}   
+	public int getIdCommande() {
+		return this.idCommande;
+	}
+
+	public void setIdCommande(int idCommande) {
+		this.idCommande = idCommande;
+	}   
+	public String getNumCommande() {
+		return this.numCommande;
+	}
+
+	public void setNumCommande(String numCommande) {
+		this.numCommande = numCommande;
+	}
+   
+}
