@@ -5,11 +5,11 @@ import java.lang.String;
 import javax.persistence.*;
 
 @Entity
+
 public class Commande implements Serializable {
 
 	   
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private int idCommande;
 	private int Utilisateur_idUtilisateur;
 	private String montantCommande;

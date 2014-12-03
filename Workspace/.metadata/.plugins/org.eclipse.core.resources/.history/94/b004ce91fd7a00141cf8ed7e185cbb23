@@ -6,7 +6,8 @@ import javax.persistence.*;
 
 @Entity
 public class Produit implements Serializable {
- 
+
+	   
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private int idProduit;

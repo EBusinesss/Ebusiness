@@ -5,10 +5,11 @@ import java.lang.String;
 import javax.persistence.*;
 
 @Entity
+
 public class Produit implements Serializable {
- 
+
+	   
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private int idProduit;
 	private String nomProduit;
 	private int prixProduit;

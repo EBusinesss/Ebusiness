@@ -3,6 +3,10 @@ package org.entitees;
 import java.io.Serializable;
 import javax.persistence.*;
 
+/**
+ * Entity implementation class for Entity: LigneCommande
+ *
+ */
 @Entity
 public class LigneCommande implements Serializable {
 

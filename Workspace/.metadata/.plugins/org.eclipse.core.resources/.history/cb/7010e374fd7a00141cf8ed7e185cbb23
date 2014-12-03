@@ -3,11 +3,16 @@ package org.entitees;
 import java.io.Serializable;
 import javax.persistence.*;
 
+/**
+ * Entity implementation class for Entity: LigneCommande
+ *
+ */
 @Entity
+
 public class LigneCommande implements Serializable {
 
+	   
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private int idLigneCommande;
 	private int Produit_idProduit;
 	private int quantiteProduitl;

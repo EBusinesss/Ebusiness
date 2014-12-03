@@ -10,7 +10,6 @@ public class Utilisateur implements Serializable {
 
 	   
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
 	private int idUtilisateur;
 	private String nomUtilisateur;
 	private String prenomUtilisateur;
