@@ -9,7 +9,7 @@ import javax.persistence.*;
 public class LigneCommande implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
+	@GeneratedValue(strategy=GenerationType.AUTO)	
 	private Long idLigneCommande;
 	@OneToOne
 	@JoinColumn(name="idProduit")
@@ -29,6 +29,7 @@ public class LigneCommande implements Serializable {
 		this.quantiteProduit = quantiteProduit;
 		this.prixProduit = prixProduit;
 	}
+
 
 	public Long getIdLigneCommande() {
 		return this.idLigneCommande;

@@ -4,9 +4,7 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 
 import org.dao.CategorieInterface;
-import org.dao.LigneCommandeInterface;
 import org.dao.ProduitInterface;
-import org.entitees.LigneCommande;
 import org.entitees.Produit;
 import org.glassfish.hk2.utilities.reflection.Logger;
 
@@ -20,18 +18,8 @@ public class Client {
 		//Produit p = new Produit("Galaxy S5","Samsung","Img",159,12);
 
 		CategorieInterface catItem;
-		LigneCommandeInterface lCmdItem;
 		ProduitInterface item;
 		
-		
-		try {
-			lCmdItem = (LigneCommandeInterface) new InitialContext().lookup("org.dao.LigneCommandeInterface");
-			LigneCommande lcmd = new LigneCommande(12, 122);
-			lCmdItem.persistLineCmd(lcmd);
-			System.out.println("ajouterCategorie Test OK");
-		} catch (NamingException e) {
-			e.printStackTrace();
-		}
 		
 		try {
 			catItem = (CategorieInterface) new InitialContext().lookup("org.dao.CategorieInterface");

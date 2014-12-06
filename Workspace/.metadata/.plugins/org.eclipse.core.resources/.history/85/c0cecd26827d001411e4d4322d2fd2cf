@@ -26,7 +26,7 @@ public class Client {
 		
 		try {
 			lCmdItem = (LigneCommandeInterface) new InitialContext().lookup("org.dao.LigneCommandeInterface");
-			LigneCommande lcmd = new LigneCommande(12, 122);
+			LigneCommande lcmd = new LigneCommande();
 			lCmdItem.persistLineCmd(lcmd);
 			System.out.println("ajouterCategorie Test OK");
 		} catch (NamingException e) {

@@ -6,7 +6,6 @@ import javax.naming.NamingException;
 import org.dao.CategorieInterface;
 import org.dao.LigneCommandeInterface;
 import org.dao.ProduitInterface;
-import org.entitees.LigneCommande;
 import org.entitees.Produit;
 import org.glassfish.hk2.utilities.reflection.Logger;
 
@@ -25,9 +24,8 @@ public class Client {
 		
 		
 		try {
-			lCmdItem = (LigneCommandeInterface) new InitialContext().lookup("org.dao.LigneCommandeInterface");
-			LigneCommande lcmd = new LigneCommande(12, 122);
-			lCmdItem.persistLineCmd(lcmd);
+			catItem = (CategorieInterface) new InitialContext().lookup("org.dao.LigneCommandeInterface");
+			//catItem.ajouterCategorie("SmartPhone");
 			System.out.println("ajouterCategorie Test OK");
 		} catch (NamingException e) {
 			e.printStackTrace();
