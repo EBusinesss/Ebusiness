@@ -1,0 +1,5 @@
+package org.commande;
+
+public class cmdImpl implements CmdInterface {
+
+}

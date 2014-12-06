@@ -1,0 +1,33 @@
+package org.dao;
+
+import javax.ejb.EJB;
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Produit;
+import org.dao.GetProduitInterface;;
+
+@Stateless
+@Remote(SupprimerProduitInterface.class)
+public class SupprimerProduitImpl implements SupprimerProduitInterface {
+
+	@PersistenceContext(unitName="Persist")
+	private EntityManager em;
+	
+	@EJB
+	GetProduitInterface getProduit;
+	
+	public Produit supprimerProduit(Long idp) {
+		Produit p = getProduit(idp);
+		em.remove(p);
+		return p;
+	}
+
+/*	private Produit getProduit(Long idp) {
+		return em.find(Produit.class, idp);
+	}*/
+
+}

@@ -1,0 +1,14 @@
+package org.commande;
+
+import com.sun.xml.registry.common.tools.bindings_v3.Command;
+
+public interface CmdInterface {
+	
+	
+	
+	public void modifierCommande();
+	public void supprimerCommande();
+	
+
+
+}

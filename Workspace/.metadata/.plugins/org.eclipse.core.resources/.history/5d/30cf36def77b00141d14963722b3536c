@@ -1,0 +1,22 @@
+package org.dao.produit;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Produit;
+
+@Stateless
+@Remote(ModifieProduitInterface.class)
+public class ModifierProduitImpl implements ModifieProduitInterface {
+
+	@PersistenceContext(unitName="Persist")
+	private EntityManager em;
+	
+	public void modifieProduit(Produit p) {
+		em.merge(p);
+	}
+
+}

@@ -1,0 +1,11 @@
+package org.composants;
+
+public class ItemRemoveImpl implements ItemRemoveInterface {
+
+	@Override
+	public void retirerProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

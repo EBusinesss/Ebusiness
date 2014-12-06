@@ -4,13 +4,11 @@ import java.io.Serializable;
 import java.lang.String;
 import javax.persistence.*;
 
-
 @Entity
 public class Utilisateur implements Serializable {
 
-	   
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
+	@GeneratedValue(strategy=GenerationType.AUTO)	
 	private int idUtilisateur;
 	private String nomUtilisateur;
 	private String prenomUtilisateur;

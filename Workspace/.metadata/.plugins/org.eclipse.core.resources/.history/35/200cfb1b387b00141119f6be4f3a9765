@@ -1,0 +1,19 @@
+package org.dao;
+
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Produit;
+
+
+public class ModifierProduitImpl implements ModifieProduitInterface {
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	public Produit modifieProduit(Produit p) {
+		em.merge(p);
+	}
+
+}

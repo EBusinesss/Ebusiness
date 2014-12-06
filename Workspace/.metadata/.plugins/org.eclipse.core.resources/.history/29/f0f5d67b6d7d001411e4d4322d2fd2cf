@@ -1,0 +1,4 @@
+SELECT * from Produit p;
+<--DELETE FROM PRODUIT-->
+
+SELECT p FROM Produit p WHERE p.idProduit = 50;

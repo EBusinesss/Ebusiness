@@ -1,0 +1,7 @@
+package org.dao;
+
+import AddCmdInterface;
+
+public class AddCmdImpl implements AddCmdInterface {
+
+}

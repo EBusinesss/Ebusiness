@@ -1,41 +1,66 @@
 package org.entitees;
 
 import java.io.Serializable;
+import java.util.ArrayList;
+
 import javax.persistence.*;
 
 @Entity
 public class LigneCommande implements Serializable {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
-	private int idLigneCommande;
-	private int Produit_idProduit;
-	private int quantiteProduitl;
-	private static final long serialVersionUID = 1L;
-
+	@GeneratedValue(strategy=GenerationType.AUTO)	
+	private Long idLigneCommande;
+	@OneToOne
+	@JoinColumn(name="idProduit")
+	private Produit produit;
+	private int quantiteProduit;
+	private double prixProduit;
+	@ManyToOne
+	@JoinColumn(name="idCommande")
+	private Commande commade;
+	
+	
 	public LigneCommande() {
-		super();
 	}   
-	public int getIdLigneCommande() {
+	public Long getIdLigneCommande() {
 		return this.idLigneCommande;
 	}
 
-	public void setIdLigneCommande(int idLigneCommande) {
+	public void setIdLigneCommande(Long idLigneCommande) {
 		this.idLigneCommande = idLigneCommande;
-	}   
-	public int getProduit_idProduit() {
-		return this.Produit_idProduit;
 	}
-
-	public void setProduit_idProduit(int Produit_idProduit) {
-		this.Produit_idProduit = Produit_idProduit;
-	}   
-	public int getQuantiteProduitl() {
-		return this.quantiteProduitl;
+	
+	public Produit getProduit() {
+		return produit;
 	}
-
-	public void setQuantiteProduitl(int quantiteProduitl) {
-		this.quantiteProduitl = quantiteProduitl;
+	public void setProduit(Produit produit) {
+		this.produit = produit;
+	}
+	public double getPrix() {
+		return prixProduit;
+	}
+	public void setPrix(double prix) {
+		this.prixProduit = prix;
+	}
+	public Commande getCommade() {
+		return commade;
+	}
+	public void setCommade(Commande commade) {
+		this.commade = commade;
 	}
    
+	public int getQuantiteProduit() {
+		return this.quantiteProduit;
+	}
+
+	public double getPrixProduit() {
+		return prixProduit;
+	}
+	public void setPrixProduit(double prixProduit) {
+		this.prixProduit = prixProduit;
+	}
+	public void setQuantiteProduit(int quantiteProduit) {
+		this.quantiteProduit = quantiteProduit;
+	}
 }

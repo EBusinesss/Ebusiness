@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EcomJPA"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/TestEJB"/>
+	<classpathentry kind="lib" path="C:/Users/sysadmin/glassfish4/glassfish/lib/gf-client.jar" sourcepath="C:/Users/sysadmin/.m2/repository/org/glassfish/main/common/glassfish-naming/4.0/glassfish-naming-4.0-sources.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

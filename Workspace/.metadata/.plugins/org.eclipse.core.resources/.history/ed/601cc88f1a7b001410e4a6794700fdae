@@ -1,0 +1,14 @@
+package org.composants;
+
+import com.sun.xml.registry.common.tools.bindings_v3.Command;
+
+public class CmdRemoveImpl implements CmdRemoveInterface {
+
+	@Override
+	public void supprimerCommande(int numCmd) {
+		Command cmd = new Command();
+		cmd.ge
+		
+	}
+
+}

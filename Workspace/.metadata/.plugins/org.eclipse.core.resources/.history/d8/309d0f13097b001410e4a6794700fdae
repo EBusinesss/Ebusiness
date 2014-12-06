@@ -1,0 +1,17 @@
+package org.composants;
+
+public class CmdRemoveImpl implements CmdRemoveInterface {
+
+	@Override
+	public void supprimerCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void supprimerCommande(int numCmd) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

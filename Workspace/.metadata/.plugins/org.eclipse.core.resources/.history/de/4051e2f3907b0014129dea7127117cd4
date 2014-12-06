@@ -1,0 +1,8 @@
+package org.dao.commande;
+
+import org.entitees.Commande;
+
+public interface ExecCommandeInterface {
+	
+	public void executeCommande(Commande cmd);
+}

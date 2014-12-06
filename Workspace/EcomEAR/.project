@@ -3,9 +3,8 @@
 	<name>EcomEAR</name>
 	<comment></comment>
 	<projects>
-		<project>EcomEJB</project>
-		<project>EcomEJBClient</project>
 		<project>EcomJPA</project>
+		<project>TestEJB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

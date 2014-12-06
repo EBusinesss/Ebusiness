@@ -1,0 +1,6 @@
+package org.composants;
+
+public interface ItemUpdateInterface {
+
+	public void modifierQuantiteeProduit();
+}

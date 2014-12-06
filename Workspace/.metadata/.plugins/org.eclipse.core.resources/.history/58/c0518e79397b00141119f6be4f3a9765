@@ -1,0 +1,23 @@
+package org.dao;
+
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Produit;
+import org.dao.GetProduitInterface;;
+
+
+public class SupprimerProduitImpl implements SupprimerProduitInterface {
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	public Produit supprimerProduit(Long idp) {
+		GetProduitInterface pi = GetProduitInterface();
+		Produit p = pi.getProduit(idp);
+		em.remove(p);
+		return p;
+	}
+
+}

@@ -1,0 +1,5 @@
+package org.commande;
+
+public interface CmdInterface {
+
+}

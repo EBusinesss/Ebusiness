@@ -1,0 +1,11 @@
+package org.composants;
+
+public class ItemUpdateImpl implements ItemUpdateInterface {
+
+	@Override
+	public void modifierQuantiteeProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

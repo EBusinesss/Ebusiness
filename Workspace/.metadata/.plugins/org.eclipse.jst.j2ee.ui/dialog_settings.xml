@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
+	<item value="true" key="J2EE_EXPORT_OVERWRITE"/>
+	<item value="EcommerceEAR" key="LASTEARNAME_"/>
+	<item value="false" key="J2EE_EXPORT_SOURCE"/>
+	<list key="J2EE_EXPORT_JST_EAR">
+		<item value="C:\glassfish4\glassfish\domains\domain1\autodeploy\EcommerceEAR.ear"/>
+		<item value="C:\glassfish4\glassfish\domains\domain1\autodeploy\EcomEAR.ear"/>
+	</list>
 	<list key="MRU_RUNTIME_STORE">
-		<item value="jboss-as-7.1.1.Final Runtime"/>
+		<item value="GlassFish 4.0"/>
 	</list>
 </section>

@@ -1,0 +1,39 @@
+package org.dao;
+
+import java.util.Collection;
+
+import org.entitees.Categorie;
+
+public class CategorieImpl implements CategorieInterface {
+
+	@Override
+	public void creerCategie() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Categorie ajouterCategorie(String nom) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Categorie getCategorie(String nomCat) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Collection<Categorie> getListeCategorie() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteAll() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

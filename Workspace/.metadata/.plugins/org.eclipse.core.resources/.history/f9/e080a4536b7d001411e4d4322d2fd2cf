@@ -1,0 +1,20 @@
+package org.dao;
+
+import java.util.Collection;
+
+import org.entitees.Produit;
+
+public interface ProduitInterface{
+
+	public Long ajouterProduit(Produit p);
+		
+	public Collection<Produit> getListeProduitParNom(String nomProduit);
+	
+	public Collection<Produit> getListeProduit();
+	
+	public Produit getProduitParId(Long idProduit);
+	
+	public Collection<Produit> getListProduitParIdCategorie(Long idCategorie);
+	
+	public String bidon();
+}

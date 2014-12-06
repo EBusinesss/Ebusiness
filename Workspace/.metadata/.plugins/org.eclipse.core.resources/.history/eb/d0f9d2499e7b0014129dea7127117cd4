@@ -1,0 +1,19 @@
+package org.composants;
+
+import org.entitees.Commande;
+
+public class CmdAddImpl implements CmdAddInterface {
+
+	public Commande ajouterCommande(int utilisateur_idUtilisateur,
+			String montantCommande, String ligneCommande_idLigneCommande,
+			int etatCommande) {
+		Commande cmd = new Commande(client, ligneCommande, dateCommande, etatCommande, prixTotalCommande);
+		return cmd;
+	}
+
+	public Commande ajouterCommande() {
+		Commande cmd = new Commande();
+		return cmd;
+	}
+
+}

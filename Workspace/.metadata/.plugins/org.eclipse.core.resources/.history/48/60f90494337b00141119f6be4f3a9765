@@ -1,0 +1,13 @@
+package org.dao;
+
+import org.entitees.Produit;
+
+public class AjoutrProduitImpl implements AjouterProduitInterface {
+
+	@Override
+	public Long ajouterProduit(Produit p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

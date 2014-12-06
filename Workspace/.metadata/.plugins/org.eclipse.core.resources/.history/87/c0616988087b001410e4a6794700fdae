@@ -1,0 +1,60 @@
+package org.commande;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.glassfish.api.admin.CommandRunner;
+
+import com.sun.xml.registry.common.tools.bindings_v3.Command;
+
+@Stateless
+@Remote(CmdInterface.class)
+public class cmdImpl implements CmdInterface {
+
+	@PersistenceContext(unitName="Persist")
+	EntityManager em;
+
+
+	@Override
+	public void modifierCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void supprimerCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ajoutProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void retirerProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modifierQuantiteeProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void valideeCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+
+}

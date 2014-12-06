@@ -1,0 +1,18 @@
+package org.dao.commande;
+
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Commande;
+
+public class ExecCommandeImpl implements ExecCommandeInterface {
+
+	@PersistenceContext(unitName="Persist")
+	private EntityManager em;
+	
+	public void executeCommande(Commande cmd) {
+
+		em.persist(cmd);
+	}
+
+}

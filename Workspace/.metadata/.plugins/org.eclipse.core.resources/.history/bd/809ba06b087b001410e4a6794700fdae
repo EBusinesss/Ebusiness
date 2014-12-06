@@ -1,0 +1,5 @@
+package org.composants;
+
+public class CmdUpdateImpl implements CmdUpdateInterface {
+
+}

@@ -1,0 +1,19 @@
+package org.dao;
+
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Produit;
+
+
+public class GetProduitImpl implements GetProduitInterface {
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	public Produit getProduit(Long idp) {
+		return em.find(Produit.class, idp);
+	}
+
+}

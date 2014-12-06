@@ -1,0 +1,56 @@
+package org.commande;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+
+@Stateless
+@Remote(CmdInterface.class)
+public class cmdImpl implements CmdInterface {
+
+	@PersistenceContext(unitName="Persist")
+	EntityManager em;
+	
+	@Override
+	public void ajouterCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modifierCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void supprimerCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void ajoutProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void retirerProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void modifierQuantiteeProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void valideeCommande() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

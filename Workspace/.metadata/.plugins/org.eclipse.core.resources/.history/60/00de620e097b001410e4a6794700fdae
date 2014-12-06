@@ -1,0 +1,8 @@
+package org.composants;
+
+public interface CmdRemoveInterface {
+
+	public void supprimerCommande(int numCmd);
+
+	void supprimerCommande();
+}

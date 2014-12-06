@@ -1,0 +1,13 @@
+package org.dao.produit;
+
+import java.util.List;
+
+import org.entitees.Produit;
+
+public interface ListerProduitsInterface {
+
+	public List<Produit> listerProduits();
+	
+	public List<Produit> listerProduitsParMotCle(String mc);
+	
+}

@@ -1,0 +1,34 @@
+package org.dao;
+
+import java.io.Serializable;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.entitees.LigneCommande;
+import org.entitees.Produit;
+
+public class Panier implements Serializable {
+
+	private Map<Long, LigneCommande> items =new HashMap<Long, LigneCommande>();
+
+	
+	public Map<Long, LigneCommande> getItems() {
+		return items;
+	}
+
+	public void setItems(Map<Long, LigneCommande> items) {
+		this.items = items;
+	}
+
+	public Panier() {
+	}
+
+	public Panier(Map<Long, LigneCommande> items) {
+		super();
+		this.items = items;
+	}
+	
+
+	
+	
+}

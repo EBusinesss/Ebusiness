@@ -1,0 +1,16 @@
+package org.dao;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+@Stateless
+@Remote(CategorieInterface.class)
+public class CommandeImpl implements CommandeInterface {
+	
+	@PersistenceContext(unitName="Persist")
+	private EntityManager em;
+
+	
+}

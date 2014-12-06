@@ -1,0 +1,54 @@
+package org.dao;
+
+import java.util.Collection;
+import java.util.Iterator;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Categorie;
+
+@Stateless
+@Remote(CategorieInterface.class)
+public class CategorieImpl implements CategorieInterface {
+
+	@PersistenceContext(unitName="Persist")
+	private EntityManager em;
+	
+	public void creerCategie() {
+	
+		for (Iterator it = getListeCategorie().iterator();it.hasNext();) {
+			Object object = it.next();
+			em.remove(object);
+		}
+		for (Iterator it = getListeProduit(); it.hasNext();) {
+			Object object = it.next();
+			em.remove(object);
+		}
+	}
+
+    
+
+	public Categorie ajouterCategorie(String nom) {
+		
+		return null;
+	}
+
+	public Categorie getCategorie(String nomCat) {
+		
+		
+		return null;
+	}
+
+	public Collection<Categorie> getListeCategorie() {
+		
+		return null;
+	}
+
+	public void deleteAll() {
+		
+	}
+
+}

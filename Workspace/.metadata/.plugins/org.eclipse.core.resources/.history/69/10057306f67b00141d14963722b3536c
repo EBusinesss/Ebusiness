@@ -1,0 +1,6 @@
+package org.dao;
+
+public interface LigneCommandeInterface {
+
+    public void persistLineCmd(LigneCommande lcmd);
+}

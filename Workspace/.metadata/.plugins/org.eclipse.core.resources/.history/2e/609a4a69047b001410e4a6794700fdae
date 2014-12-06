@@ -1,0 +1,7 @@
+package org.commande;
+
+@Stateless
+@Remote(CmdInterface.class)
+public class cmdImpl implements CmdInterface {
+
+}

@@ -1,0 +1,27 @@
+package org.dao;
+
+import java.util.Collection;
+
+import org.entitees.Categorie;
+
+public interface CategorieInterface {
+	
+	public void creerCategie();
+	
+	public Categorie ajouterCategorie(String nom);
+	
+	public Categorie getCategorie(String nomCat);
+	
+	public Collection<Categorie> getListeCategorie();
+	
+    public void deleteAll();
+
+    public Collection<Category> getCategoryList();
+
+    public Category getCategoryByName(java.lang.String categoryName);
+
+    public Category addCategory(java.lang.String name);
+
+    public void createCategory();
+
+}

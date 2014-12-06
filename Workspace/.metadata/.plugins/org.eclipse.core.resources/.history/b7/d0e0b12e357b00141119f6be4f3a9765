@@ -1,0 +1,10 @@
+package org.dao;
+
+import java.util.List;
+
+import org.entitees.Produit;
+
+public interface ListerProduits {
+
+	public List<Produit> listerProduits();
+}

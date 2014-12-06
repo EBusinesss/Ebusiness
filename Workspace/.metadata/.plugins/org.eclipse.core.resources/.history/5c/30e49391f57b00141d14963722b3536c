@@ -1,0 +1,12 @@
+package org.dao;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+
+import com.sun.xml.bind.v2.runtime.Name;
+
+@Stateless
+@Remote(LigneCommandeInterface.class)
+public class LigneCommandeImpl implements LigneCommandeInterface {
+
+}

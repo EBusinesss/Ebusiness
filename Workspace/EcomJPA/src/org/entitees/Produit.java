@@ -2,19 +2,43 @@ package org.entitees;
 
 import java.io.Serializable;
 import java.lang.String;
+
 import javax.persistence.*;
 
 @Entity
 public class Produit implements Serializable {
  
 	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)	
+	@GeneratedValue(strategy=GenerationType.AUTO)	
 	private int idProduit;
 	private String nomProduit;
+	private String descProduit;
+	private String imgProduit;
+	@ManyToOne
+	private Categorie categorie;
 	private int prixProduit;
 	private int quantiteProduit;
 	private static final long serialVersionUID = 1L;
 
+	public Produit(String nomProduit, String descProduit, String imgProduit,
+			Categorie categorie, int prixProduit, int quantiteProduit) {
+		this.nomProduit = nomProduit;
+		this.descProduit = descProduit;
+		this.imgProduit = imgProduit;
+		this.categorie = categorie;
+		this.prixProduit = prixProduit;
+		this.quantiteProduit = quantiteProduit;
+	}
+
+	public Produit(String nomProduit, String descProduit, String imgProduit, int prixProduit, int quantiteProduit) {
+		super();
+		this.nomProduit = nomProduit;
+		this.descProduit = descProduit;
+		this.imgProduit = imgProduit;
+		this.prixProduit = prixProduit;
+		this.quantiteProduit = quantiteProduit;
+	}
+	
 	public Produit() {
 		super();
 	}   

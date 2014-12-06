@@ -1,0 +1,8 @@
+package org.dao;
+
+import org.entitees.Produit;
+
+public interface GetProduitInterface {
+
+	public Produit getProduit(Long idp);
+}

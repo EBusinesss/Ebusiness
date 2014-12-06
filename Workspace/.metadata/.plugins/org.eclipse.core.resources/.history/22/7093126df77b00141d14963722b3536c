@@ -1,0 +1,11 @@
+package org.composants;
+
+public class ItemAddImpl implements ItemAddInterface {
+
+	@Override
+	public void ajoutProduit() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,6 @@
+2014-12-05 20:14:29,548 DEBUG [main] - TestMain.main 9- Test
+2014-12-05 20:14:29,564 ERROR [main] - TestMain.autreClasse 16- Test
+2014-12-05 20:15:25,008 DEBUG [main] - TestMain.main 9- Test
+2014-12-05 20:15:25,008 ERROR [main] - TestMain.autreClasse 16- Test
+2014-12-05 20:17:20,017 DEBUG [main] - TestMain.main 9 - Test
+2014-12-05 20:17:20,033 ERROR [main] - TestMain.autreClasse 16 - Test

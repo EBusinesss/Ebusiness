@@ -1,0 +1,23 @@
+package org.dao.produit;
+
+import javax.ejb.Remote;
+import javax.ejb.Stateless;
+import javax.persistence.Entity;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import org.entitees.Produit;
+
+@Stateless
+@Remote(addArticleInterface.class)
+public class AjouterProduitImpl implements AjouterProduitInterface {
+
+	@PersistenceContext(unitName="Persist")
+	private EntityManager em;
+	
+	public Long ajouterProduit(Produit p) {
+		em.persist(p);
+		return p.getIdProduit();
+	}
+
+}

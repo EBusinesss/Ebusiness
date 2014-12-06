@@ -1,0 +1,11 @@
+package org.composants;
+
+import org.entitees.Commande;
+
+public interface CmdAddInterface {
+	
+	public Commande ajouterCommande();
+
+	public void ajouterCommande(int utilisateur_idUtilisateur, String montantCommande,
+			String ligneCommande_idLigneCommande, int etatCommande);
+}
