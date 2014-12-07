@@ -27,7 +27,7 @@ public class CmdAddImpl implements CmdAddInterface {
         cmd.setmontantCommande(cmd.getmontantCommande() + (quantite * prix));
 	}
 	
-	Long cmdID = new Long(0);
+	int cmdID = 0;
 	
 	public LigneCommande addCommandeAndLineCommande(Commande cmd, Produit produit, int quantite, double prix){
 	

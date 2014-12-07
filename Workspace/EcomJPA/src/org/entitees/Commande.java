@@ -15,7 +15,7 @@ public class Commande implements Serializable {
 	   
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)	
-	private Long idCommande;
+	private int idCommande;
 	@ManyToOne
 	private Utilisateur client;
 	@OneToMany
@@ -45,7 +45,7 @@ public class Commande implements Serializable {
         montantCommande += quantite * prix;
     }
 	
-	Long cmdID = new Long(0);
+	int cmdID = 0;
 	public LigneCommande addCommandeAndLineCommande(Produit produit, int quantite, double prix){
 	
 		if (ligneCommande == null || ligneCommande.isEmpty()){
@@ -76,11 +76,11 @@ public class Commande implements Serializable {
 		this.montantCommande = montantCommande;
 	}
 
-	public Long getIdCommande() {
+	public int getIdCommande() {
 		return idCommande;
 	}
 
-	public void setIdCommande(Long idCommande) {
+	public void setIdCommande(int idCommande) {
 		this.idCommande = idCommande;
 	}
 

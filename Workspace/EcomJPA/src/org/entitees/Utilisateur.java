@@ -13,12 +13,23 @@ public class Utilisateur implements Serializable {
 	private String nomUtilisateur;
 	private String prenomUtilisateur;
 	private String telUtilisateur;
-	private String Adresse;
+	private String adresseUtilisateur;
+
+
 	private int soldeUtilisateur;
 	private static final long serialVersionUID = 1L;
 
-	public Utilisateur() {
+	
+	public Utilisateur(String nomUtilisateur, String prenomUtilisateur,
+			String telUtilisateur, String adresse, int soldeUtilisateur) {
 		super();
+		this.nomUtilisateur = nomUtilisateur;
+		this.prenomUtilisateur = prenomUtilisateur;
+		this.telUtilisateur = telUtilisateur;
+		adresseUtilisateur = adresse;
+		this.soldeUtilisateur = soldeUtilisateur;
+	}
+	public Utilisateur() {
 	}   
 	public int getIdUtilisateur() {
 		return this.idUtilisateur;
@@ -48,13 +59,14 @@ public class Utilisateur implements Serializable {
 	public void setTelUtilisateur(String telUtilisateur) {
 		this.telUtilisateur = telUtilisateur;
 	}   
-	public String getAdresse() {
-		return this.Adresse;
-	}
 
-	public void setAdresse(String Adresse) {
-		this.Adresse = Adresse;
-	}   
+	public String getAdresseUtilisateur() {
+		return adresseUtilisateur;
+	}
+	public void setAdresseUtilisateur(String adresseUtilisateur) {
+		this.adresseUtilisateur = adresseUtilisateur;
+	}
+	
 	public int getSoldeUtilisateur() {
 		return this.soldeUtilisateur;
 	}

@@ -1,0 +1,12 @@
+package org.entitees;
+
+import javax.annotation.Generated;
+import javax.persistence.metamodel.SingularAttribute;
+import javax.persistence.metamodel.StaticMetamodel;
+
+@Generated(value="Dali", date="2014-12-06T21:37:28.012+0100")
+@StaticMetamodel(Categorie.class)
+public class Categorie_ {
+	public static volatile SingularAttribute<Categorie, Long> idCategorie;
+	public static volatile SingularAttribute<Categorie, String> nomCategorie;
+}

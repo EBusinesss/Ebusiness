@@ -1,23 +1,25 @@
 package org.entitees;
 
+import java.io.Serializable;
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Categorie {
+public class Categorie implements Serializable {
 	
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long idCategorie;
+    private int idCategorie;
     private String nomCategorie;
     
-	public Long getIdCategorie() {
+	public int getIdCategorie() {
 		return idCategorie;
 	}
 
-	public void setIdCategorie(Long idCategorie) {
+	public void setIdCategorie(int idCategorie) {
 		this.idCategorie = idCategorie;
 	}
 
@@ -32,7 +34,7 @@ public class Categorie {
 	public Categorie() {
 	}
 	
-	public Categorie(Long idCategorie, String nomCategorie) {
+	public Categorie(int idCategorie, String nomCategorie) {
 		this.idCategorie = idCategorie;
 		this.nomCategorie = nomCategorie;
 	}

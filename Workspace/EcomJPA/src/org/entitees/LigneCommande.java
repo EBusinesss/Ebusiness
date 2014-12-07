@@ -10,31 +10,37 @@ public class LigneCommande implements Serializable {
 
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)	
-	private Long idLigneCommande;
+	private int idLigneCommande;
 	@OneToOne
 	@JoinColumn(name="idProduit")
 	private Produit produit;
 	private int quantiteProduit;
 	private double prixProduit;
-	@ManyToOne
-	@JoinColumn(name="idCommande")
-	private Commande commade;
+	//@ManyToOne
+	//@JoinColumn(name="idCommande")
+	private int idCommade;
 	
 	
 	public LigneCommande() {
 	}   
 	
 	
-	public LigneCommande(int quantiteProduit, double prixProduit) {
+
+	public LigneCommande(Produit produit, int quantiteProduit,
+			double prixProduit, int idCommade) {
+		this.produit = produit;
 		this.quantiteProduit = quantiteProduit;
 		this.prixProduit = prixProduit;
+		this.idCommade = idCommade;
 	}
 
-	public Long getIdLigneCommande() {
+
+
+	public int getIdLigneCommande() {
 		return this.idLigneCommande;
 	}
 
-	public void setIdLigneCommande(Long idLigneCommande) {
+	public void setIdLigneCommande(int idLigneCommande) {
 		this.idLigneCommande = idLigneCommande;
 	}
 	
@@ -50,13 +56,15 @@ public class LigneCommande implements Serializable {
 	public void setPrix(double prix) {
 		this.prixProduit = prix;
 	}
-	public Commande getCommade() {
-		return commade;
+
+	public int getIdCommade() {
+		return idCommade;
 	}
-	public void setCommade(Commande commade) {
-		this.commade = commade;
+
+	public void setIdCommade(int idCommade) {
+		this.idCommade = idCommade;
 	}
-   
+
 	public int getQuantiteProduit() {
 		return this.quantiteProduit;
 	}

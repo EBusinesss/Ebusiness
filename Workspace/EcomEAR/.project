@@ -5,6 +5,7 @@
 	<projects>
 		<project>EcomJPA</project>
 		<project>TestEJB</project>
+		<project>EcomWEB</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
