@@ -1,5 +1,0 @@
-package org.composants;
-
-public class ItemAddImpl implements ItemAddInterface {
-
-}

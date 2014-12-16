@@ -14,9 +14,8 @@ public class Utilisateur implements Serializable {
 	private String prenomUtilisateur;
 	private String telUtilisateur;
 	private String adresseUtilisateur;
-
-
 	private int soldeUtilisateur;
+	
 	private static final long serialVersionUID = 1L;
 
 	

@@ -1,8 +1,0 @@
-package Produit;
-
-import org.entitees.Produit;
-
-public interface AjouterProduitInterface {
-
-	public Long ajouterProduit(Produit p);
-}

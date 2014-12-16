@@ -1,5 +1,0 @@
-package org.composants;
-
-public class ItemRemoveImpl implements ItemRemoveInterface {
-
-}

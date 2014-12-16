@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.jboss.security.ISecurityManagement"/>
-<fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="javax.persistence.EntityManager"/>
 <fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
 <fullyQualifiedTypeName name="java.util.List"/>
@@ -15,24 +14,30 @@
 <fullyQualifiedTypeName name="java.sql.Date"/>
 <fullyQualifiedTypeName name="java.util.Date"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
-<fullyQualifiedTypeName name="org.entitees.Commande"/>
 <fullyQualifiedTypeName name="com.sun.jmx.snmp.Timestamp"/>
 <fullyQualifiedTypeName name="java.security.Timestamp"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="org.entitees.Categorie"/>
 <fullyQualifiedTypeName name="com.sun.org.apache.regexp.internal.recompile"/>
 <fullyQualifiedTypeName name="javax.ejb.Stateless"/>
 <fullyQualifiedTypeName name="javax.ejb.Remote"/>
 <fullyQualifiedTypeName name="com.sun.xml.bind.v2.runtime.Name"/>
-<fullyQualifiedTypeName name="org.entitees.LigneCommande"/>
 <fullyQualifiedTypeName name="com.sun.msv.datatype.xsd.TotalDigitsFacet"/>
 <fullyQualifiedTypeName name="org.dao.ProduitInterface"/>
-<fullyQualifiedTypeName name="org.entitees.Produit"/>
-<fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="org.glassfish.hk2.utilities.reflection.Logger"/>
 <fullyQualifiedTypeName name="Client"/>
 <fullyQualifiedTypeName name="org.apache.log4j.Logger"/>
 <fullyQualifiedTypeName name="org.dao.CategorieImpl"/>
-<fullyQualifiedTypeName name="javax.ejb.EJB"/>
 <fullyQualifiedTypeName name="javax.persistence.Entity"/>
+<fullyQualifiedTypeName name="org.dao.CategorieInterface"/>
+<fullyQualifiedTypeName name="org.dao.LigneCommandeInterface"/>
+<fullyQualifiedTypeName name="javax.ejb.EJB"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.io.Writer"/>
+<fullyQualifiedTypeName name="java.util.Collection"/>
+<fullyQualifiedTypeName name="org.entitees.Categorie"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="org.entitees.Utilisateur"/>
+<fullyQualifiedTypeName name="org.entitees.Produit"/>
+<fullyQualifiedTypeName name="org.entitees.LigneCommande"/>
+<fullyQualifiedTypeName name="org.entitees.Commande"/>
 </qualifiedTypeNameHistroy>

@@ -1,8 +1,0 @@
-package org.dao;
-
-import org.entitees.Commande;
-
-public interface AddCmdInterface {
-
-	public void executeCommande(Commande cmd);
-}

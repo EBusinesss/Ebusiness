@@ -1,8 +1,0 @@
-package org.dao;
-
-import org.entitees.Produit;
-
-public interface addArticleInterface {
-
-	public void addArticle(Produit p, int quantitee);
-}

@@ -1,7 +1,0 @@
-package org.composants;
-
-public interface CmdAddInterface {
-	
-	public void ajouterCommande();
-
-}

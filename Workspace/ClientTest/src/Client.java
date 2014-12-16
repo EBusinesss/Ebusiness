@@ -43,9 +43,6 @@ public class Client {
 			e.printStackTrace();
 		}
 
-		
-		
-		
 		try {
 			lCmdItem = (LigneCommandeInterface) new InitialContext().lookup("org.dao.LigneCommandeInterface");
 			

@@ -1,5 +1,0 @@
-package org.composants;
-
-public interface CmdAddInterface {
-
-}

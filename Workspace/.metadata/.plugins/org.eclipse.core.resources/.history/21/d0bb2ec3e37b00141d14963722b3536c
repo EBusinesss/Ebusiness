@@ -1,5 +1,0 @@
-package org.dao;
-
-public class CategorieImpl implements CategorieInterface {
-
-}

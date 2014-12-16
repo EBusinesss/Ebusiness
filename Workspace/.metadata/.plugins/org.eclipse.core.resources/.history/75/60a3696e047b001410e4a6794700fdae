@@ -1,9 +1,0 @@
-package org.commande;
-
-import javax.ejb.Stateless;
-
-@Stateless
-@Remote(CmdInterface.class)
-public class cmdImpl implements CmdInterface {
-
-}

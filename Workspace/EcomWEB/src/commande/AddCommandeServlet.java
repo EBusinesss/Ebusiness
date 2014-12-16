@@ -13,9 +13,7 @@ import org.entitees.LigneCommande;
 import org.entitees.Produit;
 import org.entitees.Utilisateur;
 
-/**
- * Servlet implementation class AddCommandeServlet
- */
+
 @WebServlet("/AddCommandeServlet")
 public class AddCommandeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

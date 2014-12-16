@@ -1,9 +1,0 @@
-package org.composants;
-
-public interface CmdAddInterface {
-	
-	public void ajouterCommande();
-
-	public void ajouterCommande(int utilisateur_idUtilisateur, String montantCommande,
-			String ligneCommande_idLigneCommande, int etatCommande);
-}
