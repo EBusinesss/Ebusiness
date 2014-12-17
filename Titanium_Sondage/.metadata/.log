@@ -29,3 +29,123 @@ Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\sysadmin\D
 !MESSAGE Failed to acquire lock for git repository.
 !SUBENTRY 1 com.aptana.git.core 4 0 2014-12-16 21:58:05.549
 !MESSAGE Failed to acquire lock for git repository.
+
+!ENTRY com.aptana.editor.common 4 0 2014-12-17 01:06:29.950
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  (Errno::EINVAL) =::
+!STACK 0
+org.jruby.exceptions.RaiseException: (Errno::EINVAL) =::
+	at org.jruby.RubyHash.replace(org/jruby/RubyHash.java:1623)
+
+!ENTRY org.eclipse.debug.ui 4 120 2014-12-17 10:43:12.110
+!MESSAGE Error logged from Debug UI: 
+!STACK 0
+java.io.IOException: not supported
+	at com.aptana.js.debug.core.internal.StreamsProxy.write(StreamsProxy.java:110)
+	at org.eclipse.debug.internal.ui.views.console.ProcessConsole$InputReadJob.run(ProcessConsole.java:687)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+
+!ENTRY com.appcelerator.titanium.android.core 4 0 2014-12-17 10:43:14.235
+!MESSAGE Debugger failed to connect
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-17 10:47:29.703
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-17 10:49:03.829 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data C:\Users\sysadmin\Documents\GitHub\Ebusiness\Titanium_Sondage
+
+!ENTRY org.eclipse.ui 2 0 2014-12-17 10:49:06.340
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-17 10:49:06.340
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-17 10:49:06.340
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-12-17 10:49:20.940
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+
+!ENTRY org.eclipse.core.jobs 4 2 2014-12-17 13:20:20.940
+!MESSAGE An internal error occurred during: "Sending Analytics Ping ...".
+!STACK 0
+java.lang.NullPointerException
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.getAnalyticsLogger(DefaultAnalyticsEventHandler.java:207)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler.sendEventSync(DefaultAnalyticsEventHandler.java:241)
+	at com.aptana.usage.internal.DefaultAnalyticsEventHandler$1.run(DefaultAnalyticsEventHandler.java:75)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:53)
+!SESSION 2014-12-17 22:54:17.206 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 2 0 2014-12-17 22:54:21.429
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-17 22:54:21.429
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-17 22:54:21.430
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-12-17 22:55:00.515
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+!SESSION 2014-12-18 00:02:43.474 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-12-18 00:03:09.628
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2014-12-18 00:03:15.427
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-18 00:03:15.427
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-18 00:03:15.427
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.git.core 4 0 2014-12-18 00:04:39.477
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Errors occurred while grabbing changed file listings
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-12-18 00:08:01.705
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
+!SESSION 2014-12-18 00:27:16.201 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_67
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2014-12-18 00:27:39.937
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.ui 2 0 2014-12-18 00:27:47.492
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-18 00:27:47.492
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.run_on_device.android'
+!SUBENTRY 1 org.eclipse.ui 2 0 2014-12-18 00:27:47.492
+!MESSAGE Cannot bind to an undefined command: plug-in='com.appcelerator.titanium.android.ui', id='com.appcelerator.titanium.mobile.command.debug_on_device.android'
+
+!ENTRY com.aptana.git.core 4 0 2014-12-18 00:29:19.006
+!MESSAGE (Build 3.4.1.201410281727) [ERROR]  Errors occurred while grabbing changed file listings
+
+!ENTRY com.aptana.git.core 4 1 2014-12-18 00:29:34.977
+!MESSAGE Errors occurred while refreshing git index
+!SUBENTRY 1 com.aptana.git.core 4 0 2014-12-18 00:29:34.977
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2014-12-18 00:29:34.977
+!MESSAGE Failed to acquire lock for git repository.
+!SUBENTRY 1 com.aptana.git.core 4 0 2014-12-18 00:29:34.977
+!MESSAGE Failed to acquire lock for git repository.
+
+!ENTRY com.appcelerator.titanium.ui.ide 4 0 2014-12-18 00:30:07.995
+!MESSAGE (Build 3.4.1.201410281727) [ERROR] com.appcelerator.titanium.core/debug/dashboard Unknown SDK iphone
