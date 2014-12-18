@@ -15,7 +15,7 @@ var QuestionnaireTab = Titanium.UI.createTab({
 });
  
 var winSondages = Titanium.UI.createWindow({  
-    title:'Sondages',
+    title:'Liste des Sondages',
     backgroundColor:'#fff',
     url: "/lib/sondages.js"
 });
@@ -26,7 +26,7 @@ var SondagesTab = Titanium.UI.createTab({
 });
  
 var winResultats = Titanium.UI.createWindow({  
-    title:'Resultats',
+    title:'Résultats et stats',
     backgroundColor:'#fff',
     url: "/lib/resultats.js"
 });
