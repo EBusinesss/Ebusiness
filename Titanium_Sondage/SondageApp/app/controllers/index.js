@@ -5,7 +5,7 @@ var tabGroup = Titanium.UI.createTabGroup();
  
 var winQuestionnaire = Titanium.UI.createWindow({  
     title:'Questionnaire',
-    backgroundColor:'#fff',
+    backgroundColor: 'lightgray',
     url: "/lib/questionnaire.js"
 });
 var QuestionnaireTab = Titanium.UI.createTab({  
@@ -15,8 +15,8 @@ var QuestionnaireTab = Titanium.UI.createTab({
 });
  
 var winSondages = Titanium.UI.createWindow({  
-    title:'Liste des Sondages',
-    backgroundColor:'#fff',
+    title:'Autres Sondages',
+    backgroundColor: 'lightgray',
     url: "/lib/sondages.js"
 });
 var SondagesTab = Titanium.UI.createTab({  
@@ -27,7 +27,7 @@ var SondagesTab = Titanium.UI.createTab({
  
 var winResultats = Titanium.UI.createWindow({  
     title:'Résultats et stats',
-    backgroundColor:'#fff',
+    backgroundColor: 'lightgray',
     url: "/lib/resultats.js"
 });
 var ResultatsTab = Titanium.UI.createTab({  
@@ -38,8 +38,9 @@ var ResultatsTab = Titanium.UI.createTab({
 
 var winAide = Titanium.UI.createWindow({  
     title:'Aide',
-    backgroundColor:'#fff',
+    backgroundColor: 'lightgray',
     url: "/lib/aide.js"
+
 });
 var AideTab = Titanium.UI.createTab({  
     icon:'/images/Aide.png',
