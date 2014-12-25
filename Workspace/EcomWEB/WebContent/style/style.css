@@ -1,7 +1,6 @@
 @CHARSET "ISO-8859-1";
 
 body{
-	margin: 10px;
 	background: #f3f2f3;
 	color: #000000;
 	font-family: Trebuchet MS, Arial, Times New Roman;
@@ -23,12 +22,59 @@ body{
 }
 
 #navigation{
+	padding: 5px;
 	width: 100%;
 	height: 3%;
 }
 
+.tableNavig{
+	width: 98%;
+	font-size: 20px;
+	padding-right: 15px;
+	float: right;
+}
+
+.Account {
+	float: right;
+}
+
+.icn-search{
+	width:40px;
+	height:36px;
+	background: url(../images/account.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    float: right;
+	cursor: pointer;
+}
+.Account>div {
+	width:40px;
+	height:36px;
+	background: url(../images/account.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.Basket {
+	float: right;
+}
+
+.Basket>div {
+	width:40px;
+	height:36px;
+	background: url(../images/basket.png);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.Basket>a {
+	color: #29b001;
+}
+
 #menuLateral{
-	background: #333333;
+	background: url(../images/shattered-bg.png);
 	float: left;
 	width: 20%;
 	height: 65%;
@@ -36,14 +82,14 @@ body{
 
 
 #content {
-	background: #d2d0d2;	
+	background: url(../images/shatteredgold-bg.png);
 	float: right;
 	width: 80%;
 	height: 65%;
 }
 
 #footer {
-	background: #838283;
+	background: url(../images/shatteredbronze-bg.png);
 	width: 100%;
 	height: 10%;
 	position: absolute;
@@ -53,3 +99,5 @@ body{
 a{
 	cursor: pointer;
 }
+
+

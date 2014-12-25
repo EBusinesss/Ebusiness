@@ -33,13 +33,13 @@ public class RechercherProductServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String nomProduit = String.valueOf(request.getParameter("nomProduitRecherche"));
+		String nomProduit = request.getParameter("val");
 		
 		Collection<Produit> resultat = produitItem.getListeProduitParNom(nomProduit);
 		
 		Writer out = response.getWriter();
+		//out.write("test de connexion ajax ::"+ nomProduit);
 		out.write("<table>");
-
 		for (Produit produit : resultat) {
 			out.write("<tr>");
 			out.write("<td> Name Product :"+ produit.getNomProduit()+"</td>");
@@ -53,20 +53,6 @@ public class RechercherProductServlet extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		String nomProduit = String.valueOf(request.getParameter("nomProduitRecherche"));
-		
-		Collection<Produit> resultat = produitItem.getListeProduitParNom(nomProduit);
-		
-		Writer out = response.getWriter();
-		out.write("<table>");
-
-		for (Produit produit : resultat) {
-			out.write("<tr>");
-			out.write("<td> Name Product :"+ produit.getNomProduit()+"</td>");
-			out.write("<td> Prix Product :"+ produit.getPrixProduit()+"</td>");
-			out.write("<tr>");
-		}
-		out.write("</table>");
 
 	}
 

@@ -43,8 +43,8 @@ public class ProduitImpl implements ProduitInterface {
 	}
 	
 	public Collection<Produit> getListeProduitParNom(String nomProduit){
-		Query req = em.createQuery("SELECT p FROM Produit p WHERE p.nomProduit like :x");
-		req.setParameter("x", nomProduit);
+		Query req = em.createQuery("SELECT p FROM Produit p WHERE UPPER(p.nomProduit) like UPPER(:x)");
+		req.setParameter("x", "%"+nomProduit+"%");
 		return req.getResultList();
 	}
 	
