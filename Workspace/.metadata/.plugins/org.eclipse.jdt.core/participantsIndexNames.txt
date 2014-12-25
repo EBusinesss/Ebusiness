@@ -3,3 +3,5 @@ C:\Users\sysadmin\Documents\GitHub\Ebusiness\Workspace\.metadata\.plugins\org.ec
 \EcomWEB\src
 C:\Users\sysadmin\Documents\GitHub\Ebusiness\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3830026268.index
 \WebJAX\src
+C:\Users\sysadmin\Documents\GitHub\Ebusiness\Workspace\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1933397981.index
+\SayHelloEjbFromJspWeb\src

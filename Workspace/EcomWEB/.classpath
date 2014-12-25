@@ -15,5 +15,6 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/EcomJPA"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/TestEJB"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/EcomEJB"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

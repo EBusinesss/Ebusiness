@@ -1,7 +1,9 @@
 =run
-LAST_LAUNCH_TIMESTAMP=1418933099402
+LAST_LAUNCH_TIMESTAMP=1419000086416
 SondageApp\:launchMode=run
 SondageApp\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
+WriteJsonFile\:launchMode=run
+WriteJsonFile\:launchShortcut=com.appcelerator.titanium.mobile.ui.android.device.launchShortcut
 eclipse.preferences.version=1
 preference.show.console.onError=true
 preference.studio.perspective.version=103
