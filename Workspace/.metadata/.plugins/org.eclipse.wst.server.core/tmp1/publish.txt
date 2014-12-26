@@ -1,6 +1,7 @@
 #GlassFish 3
-#Thu Dec 25 21:30:07 CET 2014
+#Fri Dec 26 18:14:55 CET 2014
 org.eclipse.jst.jee.server\:EcomEAR=C\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\EcomEAR
 org.eclipse.jst.jee.server\:SayHelloFromJSPEAR=C\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\SayHelloFromJSPEAR
+org.eclipse.jst.jee.server\:AutoComp=C\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\AutoComp
 org.eclipse.jst.jee.server\:WebJAX=C\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\WebJAX
 org.eclipse.jst.jee.server\:SayHelloEjbFromJspWeb=C\:\\glassfish4\\glassfish\\domains\\domain1\\eclipseApps\\SayHelloEjbFromJspWeb
