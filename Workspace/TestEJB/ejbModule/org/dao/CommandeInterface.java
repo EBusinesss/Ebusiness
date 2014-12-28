@@ -2,7 +2,17 @@ package org.dao;
 
 import org.entitees.Commande;
 
-public interface CommandeInterface {
+import org.entitees.Produit;
+import org.entitees.Utilisateur;
 
+public interface CommandeInterface {
+	
 	public void executeCommande(Commande cmd);
+	
+	public Commande ajoutCommandeAndLineCommande(Utilisateur user,Produit produit, int quantite, double prix);
+	
+	public void cleanCart(Utilisateur user);
+	
+	public Commande cartCommande(Utilisateur user);
+	
 }

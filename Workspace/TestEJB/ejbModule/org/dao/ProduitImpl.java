@@ -4,6 +4,7 @@ import java.util.Collection;
 
 
 
+
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
@@ -53,6 +54,7 @@ public class ProduitImpl implements ProduitInterface {
 		req.setParameter("x", idProduit);
 		return req.getResultList();
 	}
+	
 
 	public Collection<Produit> getListProduitParIdCategorie(Long idCategorie){
 		Query req = em.createQuery("SELECT p FROM Produit p WHERE p.idCategorie like :x");
@@ -63,6 +65,22 @@ public class ProduitImpl implements ProduitInterface {
 	public String bidon()
 	{
 		return "Test bidon";
+	}
+
+	@Override
+	public void supprimerProduits(int idP) {
+		
+		Collection<Produit> p = getProduitParId(idP);
+		for (Produit produit : p) {
+			em.remove(produit);
+		}
+	}
+
+	@Override
+	public Collection<Produit> getListProduitParCategorie(String Categorie) {
+		Query req = em.createQuery("SELECT p FROM Produit p WHERE p.catProduit like :x");
+		req.setParameter("x", Categorie);
+		return req.getResultList();	
 	}
 
 }

@@ -12,7 +12,7 @@
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>
-        <dependent-module archiveName="EComWEB2.war" deploy-path="/" handle="module:/resource/EComWEB2/EComWEB2">
+        <dependent-module archiveName="EcomWEB3.war" deploy-path="/" handle="module:/resource/EcomWEB3/EcomWEB3">
             <dependent-object/>
             <dependency-type>uses</dependency-type>
         </dependent-module>

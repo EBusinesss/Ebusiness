@@ -16,5 +16,7 @@ public interface ProduitInterface{
 	
 	public Collection<Produit> getListProduitParIdCategorie(Long idCategorie);
 	
-	public String bidon();
+	public Collection<Produit> getListProduitParCategorie(String Categorie);
+	
+	public void supprimerProduits(int idP);
 }

@@ -69,7 +69,7 @@
 			</h1>
 
 			<ul>
-				<li>Smartphones</li>
+				<li><a id="ordinateurs" onclick="listProduitsParCat('ordinateurs')">Ordinateurs</a></li>
 				<li>Ordinateurs</li>
 			</ul>
 		</div>

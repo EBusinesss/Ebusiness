@@ -28,8 +28,6 @@ public class Client {
 		LigneCommandeInterface lCmdItem;
 		ProduitInterface item;
 		
-		
-		
 		try {
 			Commande cmd = new Commande(user, null, "En cours", 0);
 			Produit p2 = new Produit("Mac Book Pro", "Apple", "Img Mac", 1000, 2);
@@ -77,7 +75,7 @@ public class Client {
 		
 		try {
 			item = (ProduitInterface) new InitialContext().lookup("org.dao.ProduitInterface");
-			resultat = item.getListeProduitParNom("Galaxy S5");
+			resultat = item.getListeProduitParNom("APPLE iPad mini");
 			System.out.println(resultat.size());
 			System.out.println("getListeProduitParNom Test OK");
 			
@@ -87,7 +85,7 @@ public class Client {
 
 		try {
 			item = (ProduitInterface) new InitialContext().lookup("org.dao.ProduitInterface");
-			resultat = item.getProduitParId(51);
+			resultat = item.getProduitParId(3);
 			System.out.println(resultat.size());
 			System.out.println("getProduitParId Test OK");
 			

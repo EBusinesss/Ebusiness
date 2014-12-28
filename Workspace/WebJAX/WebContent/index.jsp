@@ -41,10 +41,8 @@
 </head>
 <body>
  
-<div class="ui-widget">
-  <label for="tags">Tags: </label>
   <input id="tags">
-</div>
+
  
  
 </body>

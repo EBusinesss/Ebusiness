@@ -14,18 +14,17 @@ public class Produit implements Serializable {
 	private String nomProduit;
 	private String descProduit;
 	private String imgProduit;
-	@ManyToOne
-	private Categorie categorie;
+	private String catProduit;
 	private int prixProduit;
 	private int quantiteProduit;
 	private static final long serialVersionUID = 1L;
 
 	public Produit(String nomProduit, String descProduit, String imgProduit,
-			Categorie categorie, int prixProduit, int quantiteProduit) {
+			String catProduit, int prixProduit, int quantiteProduit) {
 		this.nomProduit = nomProduit;
 		this.descProduit = descProduit;
 		this.imgProduit = imgProduit;
-		this.categorie = categorie;
+		this.catProduit = catProduit;
 		this.prixProduit = prixProduit;
 		this.quantiteProduit = quantiteProduit;
 	}
@@ -70,5 +69,30 @@ public class Produit implements Serializable {
 	public void setQuantiteProduit(int quantiteProduit) {
 		this.quantiteProduit = quantiteProduit;
 	}
+
+	public String getDescProduit() {
+		return descProduit;
+	}
+
+	public void setDescProduit(String descProduit) {
+		this.descProduit = descProduit;
+	}
+
+	public String getImgProduit() {
+		return imgProduit;
+	}
+
+	public void setImgProduit(String imgProduit) {
+		this.imgProduit = imgProduit;
+	}
+
+	public String getCatProduit() {
+		return catProduit;
+	}
+
+	public void setCatProduit(String catProduit) {
+		this.catProduit = catProduit;
+	}
    
+	
 }

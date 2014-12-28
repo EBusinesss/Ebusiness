@@ -17,6 +17,17 @@
 			</tr>
 		</form>
 		
+				<h1>Rechercher Produit par Categorie : </h1>
+		<form action="RechercherProductByCatServlet" method="post">
+			
+			<tr><td><input type="text" name="nomCatProduit" width="25"></td>
+				<td align="right" colspan="3">
+					<button name="submit" type="submit">Rechercher par cat</button>
+				</td>
+			</tr>
+		</form>
+		
+		
 		<h1>Ajout Categorie :</h1>
 		<form action="AddCategoryServlet" method="post">
 		<table>
@@ -47,6 +58,7 @@
 			<tr><td> nom Produit 		: <input type="text" name="nomProduit" width="25"></td></tr>
 			<tr><td> desc Produit 		:<input type="text" name="descProduit" width="25"></td></tr>
 			<tr><td> img Produit		:<input type="text" name="imgProduit" width="25"></td></tr>
+			<tr><td> cat Produit		:<input type="text" name="catProduit" width="25"></td></tr>
 			<tr><td> prix Produit 		:<input type="text" name="prixProduit" width="25"></td></tr>
 			<tr><td> quantite Produit	:<input type="text" name="quantiteProduit" width="25"></td></tr>
 			<tr>
@@ -59,6 +71,18 @@
 		
 		<form action="ListProductServlet" method="post">
 		<button name="submit" type="submit">Lister Produits</button>
+		</form>
+		
+		
+		<h1>Supprimer tout les produits :</h1>
+		<form action="RemoveProductsServlet" method="post">
+		<table>
+				<tr>
+				<td align="right" colspan="3">
+					<button name="submit" type="submit">Suppression Produits</button>
+				</td>
+				</tr>
+		</table>
 		</form>
 
 </body>

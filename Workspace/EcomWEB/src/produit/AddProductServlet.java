@@ -37,11 +37,13 @@ public class AddProductServlet extends HttpServlet {
 		String nomProduit = String.valueOf(request.getParameter("nomProduit"));
 		String descProduit = String.valueOf(request.getParameter("descProduit"));
 		String imgProduit = String.valueOf(request.getParameter("imgProduit"));
+		String catProduit = String.valueOf(request.getParameter("catProduit"));
 		Integer prixProduit = Integer.valueOf(request.getParameter("prixProduit"));
 		Integer quantiteProduit = Integer.valueOf(request.getParameter("quantiteProduit"));
 
 		Writer out = response.getWriter();
-		Produit p = new Produit(nomProduit, descProduit, imgProduit, prixProduit, quantiteProduit);
+		Produit p = new Produit(nomProduit, descProduit, imgProduit, catProduit, prixProduit, quantiteProduit);
+		//Produit p = new Produit(nomProduit, descProduit, imgProduit, prixProduit, quantiteProduit);
 		produitItem.ajouterProduit(p);
 		out.write("<html><head><title>Result</title></head><body>");
 		out.write("<table>");

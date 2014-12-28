@@ -36,8 +36,8 @@
 <fullyQualifiedTypeName name="org.entitees.Categorie"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
 <fullyQualifiedTypeName name="org.entitees.Utilisateur"/>
-<fullyQualifiedTypeName name="org.entitees.Produit"/>
 <fullyQualifiedTypeName name="org.entitees.LigneCommande"/>
 <fullyQualifiedTypeName name="org.entitees.Commande"/>
 <fullyQualifiedTypeName name="java.io.Writer"/>
+<fullyQualifiedTypeName name="org.entitees.Produit"/>
 </qualifiedTypeNameHistroy>
