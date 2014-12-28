@@ -1,0 +1,25 @@
+var file = Titanium.Filesystem.getFile("/ResBU.json");
+
+var preParseData = (file.read().text);
+
+alert(preParseData);
+
+var content = JSON.parse(preParseData);
+content.rep1[0].choix1 = '10';
+content.rep1[0].choix2 = '10';
+content.rep1[0].choix3 = '10';
+content.rep1[0].choix4 = '10';
+//alert(content);
+
+var fileRes = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,"/ResBU2.json");
+/*
+if (!fileRes.exists) {
+	fileRes.createFile();
+}*/
+
+fileRes.write(JSON.stringify(content));
+
+var preParseData2 = (fileRes.read().text);
+alert(preParseData2);
+//alert(JSON.parse(content2));
+

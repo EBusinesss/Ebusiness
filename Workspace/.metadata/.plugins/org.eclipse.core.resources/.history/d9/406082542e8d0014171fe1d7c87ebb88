@@ -1,0 +1,66 @@
+package org.interaction.web;
+
+import java.io.IOException;
+import java.io.Writer;
+import java.util.Collection;
+
+import javax.ejb.EJB;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+
+
+import org.entitee.Utilisateur;
+import org.service.inscription.CompteUtilisateurInterface;;
+
+/**
+ * Servlet implementation class Traitement
+ */
+@WebServlet("/Traitement")
+public class Traitement extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+     
+	@EJB private CompteUtilisateurInterface compteUtilisateur;
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Traitement() {
+        super();
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String email = request.getParameter("mail");
+		Writer out = response.getWriter();
+		out.write("voila l'email : "+ email);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		String emailUtilisateur = String.valueOf(request.getParameter("mail"));
+		String nomUtilisateur = String.valueOf(request.getParameter("Nom"));
+		String prenomUtilisateur = String.valueOf(request.getParameter("Prenom"));
+		String telephoneUtilisateur = String.valueOf(("Telephone"));
+		String adresseUtilisateur = String.valueOf(("Adresse"));
+		
+		Writer out = response.getWriter();
+		out.write("<html><head><title>Result</title></head><body>");
+		compteUtilisateur.ajout(emailUtilisateur, nomUtilisateur, prenomUtilisateur, telephoneUtilisateur, adresseUtilisateur);
+		compteUtilisateur.enregistrer();
+		Collection collection;
+		collection<Utilisateur> = compteUtilisateur.getListUsers();
+	    for (Utilisateur utilisateur : collection)
+		out.write("Resultat de l'operation : rien");
+		out.flush();
+		out.close();
+	}
+
+}

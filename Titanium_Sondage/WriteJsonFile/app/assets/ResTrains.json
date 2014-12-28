@@ -1,0 +1,75 @@
+{
+"Q1": [
+			{
+		"intitule": "Trains",
+		"id": "1",
+        "title": "Comment trouvez les horaires de la sncf?"
+			}
+],
+"rep1": [
+    {
+        "choix1": 0,
+        "choix2": 0,
+        "choix3": 0,
+        "choix4": 0
+    }
+],
+
+"Q2": [
+			{
+		"id": "2",
+        "title": "Comment estimez vous la ponctualite des trains de la sncf?"
+			}
+],
+"rep2": [
+    {
+        "choix1": 0,
+        "choix2": 0,
+        "choix3": 0,
+        "choix4": 0
+    }
+],
+"Q3": [
+			{
+		"id": "3",
+        "title": "Comment estimez vous l'etat de proprete des trains?"
+			}
+],
+"rep3": [
+    {
+        "choix1": 0,
+        "choix2": 0,
+        "choix3": 0,
+        "choix4": 0
+    }
+],
+"Q4": [
+			{
+		"id": "4",
+        "title": "Comment estimez vous la climatisation des trains ?"
+			}
+],
+"rep4": [
+    {
+        "choix1": 0,
+        "choix2": 0,
+        "choix3": 0,
+        "choix4": 0
+    }
+],
+"Q5": [
+			{
+		"id": "5",
+        "title": "Comment estimez vous le nombre de places disponibles ?"
+			}
+],
+"rep5": [
+    {
+        "choix1": 0,
+        "choix2": 0,
+        "choix3": 0,
+        "choix4": 0
+    }
+]
+
+}

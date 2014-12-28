@@ -1,0 +1,46 @@
+/**
+ * @author LAMGHAARI Mohammed & MAAD Ali & MASOCCO Angelina
+ */
+
+
+//// region Connexion au fichier json du questionnaire
+	var file = Titanium.Filesystem.getFile("/lib/sondages/ResTrains.json");    
+	var json, id, title ,question,questions,logo, repponse;
+	var preParseData = (file.read().text); 
+	//alert(preParseData);
+	var content = JSON.parse(preParseData); 	
+//// end region Connexion au fichier json du questionnaire
+
+
+//// region creation de composants 
+
+var win = Ti.UI.currentWindow;
+var view1 = Ti.UI.createView({ backgroundColor:'#fff' });
+
+
+var Labeltitre = "Resultat du Sondage :" ;
+
+var labelQ1 = "Q1 -"; 
+var labelQ2 = "Q2 -"; 
+var labelQ3 = "Q3 -"; 
+var labelQ4 = "Q4 -"; 
+var labelQ5 = "Q5 -"; 
+
+var labelRepQ1 = "Satisfaisant" + "Satisfaisant" + "Peu satisfaisant" + "Insatisfaisant" ;
+
+var labeltitle = Ti.UI.createLabel({
+	text : Labeltitre,
+	height : "auto",
+	width : "auto",
+	top: '5%',
+	textAlign : 'center',
+	font:{
+    fontSize:18,
+    fontWeight:'bold'
+   		 },
+   	color:'gray'
+});
+
+win.add(labeltitle);
+
+

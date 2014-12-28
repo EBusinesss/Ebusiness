@@ -1,0 +1,27 @@
+@CHARSET "ISO-8859-1";
+
+body{
+	background-color: #FFFFFF;
+	font-family: arial;
+	font-size: 36;
+	color: red;
+}
+
+#menuLateral{
+	width: 200px;
+	height: 625px;
+	float:left;
+	background: #252135;
+}
+
+#header{
+	height: 200px;
+	font-size: 50;
+	background-image: url("./images/header2.jpg");
+	padding-left: 1px;
+}
+
+
+a{
+	cursor: pointer;
+}

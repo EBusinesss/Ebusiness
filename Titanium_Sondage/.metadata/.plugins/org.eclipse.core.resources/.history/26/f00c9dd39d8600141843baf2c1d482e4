@@ -1,0 +1,75 @@
+{
+"Q1": [
+			{
+		"intitule": "Système d'exploitation Windows",
+		"id": "1",
+        "title": "Comment trouvez vous l'ergonomie de ce système d'exploitation?"
+			}
+],
+"rep1": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+
+"Q2": [
+			{
+		"id": "2",
+        "title": "Comment trouvez le temps de démarrage du système?"
+			}
+],
+"rep2": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q3": [
+			{
+		"id": "3",
+        "title": "Comment trouvez vous le temps d'exécution des applications?"
+			}
+],
+"rep3": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q4": [
+			{
+		"id": "4",
+        "title": "Comment trouvez vous le niveau de sécurité du système?"
+			}
+],
+"rep4": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q5": [
+			{
+		"id": "5",
+        "title": "Comment trouvez vous la maniabilité du système?"
+			}
+],
+"rep5": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+]
+
+}

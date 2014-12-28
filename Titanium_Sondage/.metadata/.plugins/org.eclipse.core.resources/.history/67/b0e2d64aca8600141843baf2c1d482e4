@@ -1,0 +1,154 @@
+/**
+ * @author LAMGHAARI Mohammed & MAAD Ali & MASOCCO Angelina
+ */
+
+//// region Connexion au fichier json du questionnaire
+var file = Titanium.Filesystem.getFile("/lib/sondages/ResUniversite.json");
+var json,
+    id,
+    title,
+    question,
+    questions,
+    logo,
+    repponse;
+var preParseData = (file.read().text);
+//alert(preParseData);
+var content = JSON.parse(preParseData);
+//// end region Connexion au fichier json du questionnaire
+
+//// region creation de composants
+
+var win = Ti.UI.currentWindow;
+
+var view1 = Ti.UI.createView({
+	backgroundColor : 'dimgray'
+});
+
+var scrollView = Titanium.UI.createScrollView({
+	contentWidth : 'auto',
+	contentHeight : 'auto',
+	top : 0,
+	layout : 'vertical',
+	showVerticalScrollIndicator : true,
+	//showHorizontalScrollIndicator : true
+});
+
+var txtS1 = 'Résultats du Sondage :<br>'+content.Q1[0].intitule;
+
+var txtQ1 = "Q1 -"+content.Q1[0].title;
+var txtQ2 = "Q2 -"+content.Q2[0].title;
+var txtQ3 = "Q3 -"+content.Q3[0].title;
+var txtQ4 = "Q4 -"+content.Q4[0].title;
+var txtQ5 = "Q5 -"+content.Q5[0].title;
+
+var txtRepQ1 = "Trés Satisfaisant :" + "<br>Satisfaisant :" + "<br>Peu satisfaisant :" + "<br>Insatisfaisant :";
+var txtRepQ2 = "Trés Satisfaisant :" + "<br>Satisfaisant :" + "<br>Peu satisfaisant :" + "<br>Insatisfaisant :";
+var txtRepQ3 = "Trés Satisfaisant :" + "<br>Satisfaisant :" + "<br>Peu satisfaisant :" + "<br>Insatisfaisant :";
+
+var labelS1 = Ti.UI.createLabel({
+	text : txtS1,
+	height : "auto",
+	width : "90%",
+	top: '10%',
+	left: 10,
+	textAlign : 'center',
+	font:{
+    fontSize:20,
+    fontWeight:'bold'
+   		 },
+});
+
+var labelQ1 = Ti.UI.createLabel({
+	text : txtQ1,
+	height : "auto",
+	width : "90%",
+	top: '5%',
+	left: 20,
+	textAlign : 'center',
+	font:{
+    fontSize:15,
+    fontWeight:'bold'
+   		 },
+});
+
+
+var labelRepQ1 = Ti.UI.createLabel({
+	text : txtRepQ1,
+	height : "auto",
+	width : "90%",
+	top: '3%',
+	left: 40,
+	textAlign : 'left',
+	font:{
+    fontSize:15,
+   		 },
+});
+
+
+
+scrollView.add(labelS1);
+
+scrollView.add(labelQ1);
+scrollView.add(labelRepQ1);
+
+
+var labelQ2 = Ti.UI.createLabel({
+	text : txtQ2,
+	height : "auto",
+	width : "90%",
+	top: '5%',
+	left: 20,
+	textAlign : 'center',
+	font:{
+    fontSize:15,
+    fontWeight:'bold'
+   		 },
+});
+
+var labelRepQ2 = Ti.UI.createLabel({
+	text : txtRepQ2,
+	height : "auto",
+	width : "90%",
+	top: '3%',
+	left: 40,
+	textAlign : 'left',
+	font:{
+    fontSize:15,
+   		 },
+});
+
+scrollView.add(labelQ2);
+scrollView.add(labelRepQ2);
+
+var labelQ3 = Ti.UI.createLabel({
+	text : txtQ3,
+	height : "auto",
+	width : "auto",
+	top: '5%',
+	left: 20,
+	textAlign : 'center',
+	font:{
+    fontSize:15,
+    fontWeight:'bold'
+   		 },
+});
+
+var labelRepQ3 = Ti.UI.createLabel({
+	text : txtRepQ3,
+	height : "auto",
+	width : "auto",
+	top: '3%',
+	left: 40,
+	textAlign : 'left',
+	font:{
+    fontSize:15,
+   		 },
+});
+
+scrollView.add(labelQ3);
+scrollView.add(labelRepQ3);
+
+
+win.add(scrollView);
+
+

@@ -1,0 +1,75 @@
+{
+"Q1": [
+			{
+		"intitule": "Titanium",
+		"id": "1",
+        "title": "Comment trouvez les fonctions proposees par le sdk ?"
+			}
+],
+"rep1": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+
+"Q2": [
+			{
+		"id": "2",
+        "title": "Comment trouvez l'ergonomie de l'IDE?"
+			}
+],
+"rep2": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q3": [
+			{
+		"id": "3",
+        "title": "Comment trouvez vous le niveau de compatibilite des applications developpees?"
+			}
+],
+"rep3": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q4": [
+			{
+		"id": "4",
+        "title": "Comment estimez vous le niveau de facilite de debogage ?"
+			}
+],
+"rep4": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q5": [
+			{
+		"id": "5",
+        "title": "Comment trouvez la documentation fournie?"
+			}
+],
+"rep5": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+]
+
+}

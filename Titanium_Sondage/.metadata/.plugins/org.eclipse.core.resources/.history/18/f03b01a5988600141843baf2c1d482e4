@@ -1,0 +1,7 @@
+/**
+ * @author LAMGHAARI Mohammed & MAAD Ali & MASOCCO Angelina
+ */
+
+var win = Ti.UI.currentWindow;
+
+

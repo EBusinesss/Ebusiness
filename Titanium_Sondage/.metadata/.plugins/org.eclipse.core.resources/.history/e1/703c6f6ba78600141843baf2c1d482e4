@@ -1,0 +1,75 @@
+{
+"Q1": [
+			{
+		"intitule": "Bibliotheque universitaire",
+		"id": "1",
+        "title": "Comment trouvez vous les equipements mis a disposition?"
+			}
+],
+"rep1": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+
+"Q2": [
+			{
+		"id": "2",
+        "title": "Comment trouvez vous l'organisation de la bibliotheque?"
+			}
+],
+"rep2": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q3": [
+			{
+		"id": "3",
+        "title": "Comment trouvez vous l'assistance du personnel?"
+			}
+],
+"rep3": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q4": [
+			{
+		"id": "4",
+        "title": "Quel est votre appreciation par rapport au nombre de livres mis a disposition?"
+			}
+],
+"rep4": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q5": [
+			{
+		"id": "5",
+        "title": "Comment trouvez la connexion internet a la biblioth�que?"
+			}
+],
+"rep5": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+]
+
+}

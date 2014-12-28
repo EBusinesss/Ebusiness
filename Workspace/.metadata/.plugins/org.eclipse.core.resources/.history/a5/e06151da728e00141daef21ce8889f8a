@@ -1,0 +1,114 @@
+package org.interaction.web;
+
+import java.io.IOException;
+import java.io.Writer;
+import java.util.Collection;
+
+import javax.ejb.EJB;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.validation.constraints.Null;
+
+import org.dao.LigneCommandeInterface;
+import org.dao.ProduitInterface;
+import org.dao.CommandeInterface;
+import org.entitees.Commande;
+import org.entitees.LigneCommande;
+import org.entitees.Produit;
+import org.entitees.Utilisateur;
+
+/**
+ * Servlet implementation class AjoutPanier
+ */
+@WebServlet("/AjoutPanierServlet")
+public class AjoutPanierServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+    
+	@EJB
+	private ProduitInterface item;
+	@EJB
+	private LigneCommandeInterface lCmdItem;
+	@EJB
+	private CommandeInterface cmditem;
+	
+	Commande cmd=null;
+	
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AjoutPanierServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+	Utilisateur user = new Utilisateur("LAMGHARI", "Mohammed", "0695882741", "Res Jules Mousseron", 14000);	
+
+	String product = request.getParameter("produit");
+		
+	if (cmd==null) {
+		try {
+			Commande cmd = new Commande(user, null, "En cours", 0);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	Collection<Produit> p = item.getListeProduitParNom(product);
+	Commande cmd = new Commande();
+	
+	Writer out = response.getWriter();
+	for (Produit produit : p) {
+		LigneCommande lCmd = new LigneCommande(produit,1,produit.getPrixProduit(),produit.getIdProduit());
+		//cmd.ajouterLigneCommande(lCmd, 1, produit.getPrixProduit());
+		cmd.addCommandeAndLineCommande(produit, 1, produit.getPrixProduit());
+		//LigneCommande lCmd = cmd.addCommandeAndLineCommande(produit, 1, produit.getPrixProduit());
+		//LigneCommande lCmd = cmd.addCommandeAndLineCommande(produit, 1, produit.getPrixProduit());
+		lCmdItem.persistLineCmd(lCmd);
+		out.write("<p> produit:"+produit.getPrixProduit()+"</>");
+		out.write("<p> produit:"+produit.getNomProduit()+"</>");
+		out.write("<p> id lcmd:"+lCmd.getIdLigneCommande()+"</>");
+		out.write("<p> id Commande:"+lCmd.getIdCommade()+"</>");
+		out.write("<p> lcmd prix :"+lCmd.getPrix()+"</>");
+		out.write("<p> lcmd prix produit :"+lCmd.getPrixProduit()+"</>");
+		
+    	//out.write("<p> etat cmd :"+cmd.getEtatCommande()+"</>");
+		out.write("<p> Id cmd :"+cmd.getIdCommande()+"</>");
+		out.write("<p> montant cmd :"+cmd.getmontantCommande()+"</>");
+	}
+	
+
+/*			Produit p = (Produit) item.getListeProduitParNom(produit);
+		LigneCommande lCmd = new LigneCommande(p,1,p.getPrixProduit(),p.getIdProduit());
+		lCmdItem.persistLineCmd(lCmd);
+		
+		Writer out = response.getWriter();
+		out.write("<p> produit:"+produit+"</>");
+		out.write("<body>");
+		out.write("<p> id Lcmd :"+ lCmd.getIdCommade() +"</>");
+		out.write("<p> nom Produit Lcmd :"+ lCmd.getProduit().getNomProduit() +"</>");
+		out.write("<p> prix lcmd :"+ lCmd.getPrix() +"</>");
+		out.write("<p> prix produit :"+ lCmd.getPrixProduit() +"</>");
+
+		out.write("</table>");
+		out.write("</body>");*/
+		
+
+		
+		
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+}

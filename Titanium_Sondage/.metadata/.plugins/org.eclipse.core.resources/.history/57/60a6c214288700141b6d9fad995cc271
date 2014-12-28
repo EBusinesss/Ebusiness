@@ -1,0 +1,28 @@
+var file = Titanium.Filesystem.getFile("/ResTitanium.json");
+
+var preParseData = (file.read().text);
+
+alert(preParseData);
+
+var content = JSON.parse(preParseData);
+//content.rep1[0].choix1 += 1;
+//content.rep1[0].choix2 += 1;
+//content.rep1[0].choix3 += 1;
+//content.rep1[0].choix4 += 1;
+//alert(content);
+
+var fileRes = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,"ResTitanium.json");
+
+if (!fileRes.exists) {
+	fileRes.createFile();
+}
+
+fileRes.write(JSON.stringify(content));
+
+
+var preParseData2 = (fileRes.read().text);
+alert(preParseData2);
+
+
+
+

@@ -1,0 +1,84 @@
+/**
+ * @author LAMGHAARI Mohammed & MAAD Ali & MASOCCO Angelina
+ */
+
+var win = Ti.UI.currentWindow;
+
+var winResS1 = Titanium.UI.createWindow({  
+    title:'Sondages',
+    backgroundColor:'blue',
+    url: "/lib/sondage1.js"
+});
+
+var winResS2 = Titanium.UI.createWindow({  
+    title:'Sondages',
+    backgroundColor:'green',
+    url: "/lib/sondage2.js"
+});
+
+var winResS3 = Titanium.UI.createWindow({  
+    title:'Sondages',
+    backgroundColor:'pink',
+    url: "/lib/sondage3.js"
+});
+
+
+
+
+var tableS = [ {leftImage:"/images/A.png",title: "Vie universitaire",top: '5%', window:winSondage1}, 
+			   {leftImage:"/images/B.png",title: "Bibliothéque universitaire"}, 
+			   {leftImage:"/images/C.png",title: "CROUS"},
+			   {leftImage:"/images/C.png",title: "Réstaurant universitaire"},
+			   {leftImage:"/images/C.png",title: "Sport universitaire"}];
+var tableSondages = Ti.UI.createTableView({
+  data: tableS
+});
+
+
+win.add(tableSondages);
+
+//// Events handle
+
+
+var lastSelectedSondages =null;
+tableSondages.addEventListener('click',function(e){
+	
+  if (!e.rowData.selected) 
+  {
+    	if (lastSelectedSondages != null) 
+    	{
+    		lastSelectedSondages.setBackgroundColor('white');
+    		lastSelectedSondages.selected = false;
+    		lastSelectedSondages.hasCheck = false;
+    	};
+    	
+    //alert(repUser[1]);
+	//alert('title: \'' + e.row.title + '\', index: ' + e.index); 
+	
+	alert(e.index);
+	switch(e.index) {
+    case 0:
+        win.add(winSondage1);
+        break;
+    case 1:
+        win.add(winSondage2);
+        break;
+    case 2:
+        win.add(winSondage3);
+        break;
+    case 3:
+        win.add(winSondage4);
+        break;
+    default:
+        win.add(winSondage5);
+}
+
+    	//win.add(winSondage1);
+    	e.rowData.setBackgroundColor('purple');
+    	e.row.hasCheck = true;
+    	lastSelectedSondages = e.rowData;
+  };
+  e.rowData.selected = !e.rowData.selected;
+});
+
+//// End Events handle

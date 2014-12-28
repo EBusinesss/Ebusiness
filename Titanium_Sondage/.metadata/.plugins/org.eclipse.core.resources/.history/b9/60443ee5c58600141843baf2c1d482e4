@@ -1,0 +1,107 @@
+/**
+ * @author LAMGHAARI Mohammed & MAAD Ali & MASOCCO Angelina
+ */
+
+//// region Connexion au fichier json du questionnaire
+var file = Titanium.Filesystem.getFile("/lib/sondages/ResUniversite.json");
+var json,
+    id,
+    title,
+    question,
+    questions,
+    logo,
+    repponse;
+var preParseData = (file.read().text);
+//alert(preParseData);
+var content = JSON.parse(preParseData);
+//// end region Connexion au fichier json du questionnaire
+
+//// region creation de composants
+
+var win = Ti.UI.currentWindow;
+
+var view1 = Ti.UI.createView({
+	backgroundColor : 'dimgray'
+});
+
+var scrollView = Titanium.UI.createScrollView({
+	contentWidth : 'auto',
+	contentHeight : 'auto',
+	top : 0,
+	layout : 'vertical',
+	showVerticalScrollIndicator : true,
+	//showHorizontalScrollIndicator : true
+});
+
+var txt1 = 'Résultats du Sondage :';
+var txt2 = 'Résultats du Sondage :';
+var txt3 = 'Résultats du Sondage :';
+
+var txtQ1S1 = "Q1 -";
+var txtQ2S1 = "Q2 -";
+var txtQ3S1 = "Q3 -";
+var txtQ4S1 = "Q4 -";
+var txtQ5S1 = "Q5 -";
+
+var txtRepQ1 = "Satisfaisant" + "Satisfaisant" + "Peu satisfaisant" + "Insatisfaisant";
+
+var labelS1 = Ti.UI.createLabel({
+	text : txt1,
+	height : "auto",
+	width : "auto",
+	top: '10%',
+	left: 10,
+	textAlign : 'center',
+	font:{
+    fontSize:20,
+    fontWeight:'bold'
+   		 },
+});
+
+var labelQ1S1 = Ti.UI.createLabel({
+	text : txtQ1S1,
+	height : "auto",
+	width : "auto",
+	top: '5%',
+	left: 20,
+	textAlign : 'center',
+	font:{
+    fontSize:15,
+    fontWeight:'bold'
+   		 },
+});
+
+var labelS2 = Ti.UI.createLabel({
+	text : txt2,
+	height : "auto",
+	width : "auto",
+	top: '10%',
+	left: 10,
+	textAlign : 'center',
+	font:{
+    fontSize:20,
+    fontWeight:'bold'
+   		 },
+});
+
+var labelS3 = Ti.UI.createLabel({
+	text : txt3,
+	height : "auto",
+	width : "auto",
+	top: '10%',
+	left: 10,
+	textAlign : 'center',
+	font:{
+    fontSize:20,
+    fontWeight:'bold'
+   		 },
+});
+
+scrollView.add(labelS1);
+scrollView.add(labelQ1S1);
+scrollView.add(labelS2);
+scrollView.add(labelS3);
+
+win.add(scrollView);
+
+

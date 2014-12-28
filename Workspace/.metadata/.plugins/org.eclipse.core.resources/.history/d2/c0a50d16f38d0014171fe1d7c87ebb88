@@ -1,0 +1,95 @@
+var listeProduits;
+	
+function requete()
+{
+ 	document.getElementById("header").innerHTML = document.getElementById("textSearch").value;	
+ 	
+}
+	
+
+function addToCart(id){
+	alert("Ok baby");
+	alert(id);
+	alert(document.getElementById(id).value);
+	
+}
+
+function autocomplet(){
+	ajaxListeProduits("AutocompleteServlet");
+ 	var availableTags = listeProduits.split(",");
+    $(function() {
+        $( "#textSearch" ).autocomplete({
+          source: availableTags
+        });
+      });
+}
+
+
+function seLogger()
+{
+	
+	window.confirm("ok c'est bon importé");
+}
+
+
+function listdesOrdinateurs()
+	{
+	ajax("content","ProductServlet");
+	}
+function listdesSmartphones()
+{
+ajax("content","SmartphonesServlet");
+}
+
+
+function ajax(element, fichier)
+{
+	var xmlhttp;
+	if (window.XMLHttpRequest)
+	  {// code for IE7+, Firefox, Chrome, Opera, Safari
+	  xmlhttp=new XMLHttpRequest();
+	  }
+	else
+	  {// code for IE6, IE5
+	  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+	  }
+	xmlhttp.onreadystatechange=function()
+	  {
+	  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+	    {
+	    document.getElementById(element).innerHTML = xmlhttp.responseText;
+	    }
+	  };
+	xmlhttp.open("GET",fichier,true);
+	xmlhttp.send();
+}
+
+function ajaxListeProduits(fichier)
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+      listeProduits = xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET", fichier,true);
+xmlhttp.send();
+}
+
+function verifMail()
+{
+	var mail = document.getElementById("mailAddress").value;
+	var element = document.getElementById("resMail");
+	var fichier = "Traitement?mail="+mail;
+	ajax(element, fichier);
+}

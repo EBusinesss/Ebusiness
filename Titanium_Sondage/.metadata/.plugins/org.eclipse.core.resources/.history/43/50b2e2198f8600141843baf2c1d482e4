@@ -1,0 +1,19 @@
+var win = Ti.UI.currentWindow;
+
+
+var txt = 'Developpe par: LAMGHARI Mohammed MAAD Ali MASOCCO Angelina';
+
+var lblQ1 = Ti.UI.createLabel({
+	text : txt,
+	height : "auto",
+	width : "auto",
+	top: '60%',
+	textAlign : 'center',
+	font:{
+    fontSize:18,
+    fontWeight:'bold'
+   		 },
+   	color:'blue'
+});
+
+win.add(label);

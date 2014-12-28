@@ -1,0 +1,75 @@
+{
+"Q1": [
+			{
+		"intitule": "Universite de Valenciennes",
+		"id": "1",
+        "title": "Comment trouvez vous le contenu des cours?"
+			}
+],
+"rep1": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+
+"Q2": [
+			{
+		"id": "2",
+        "title": "Comment trouvez vous l'emploi du temps?"
+			}
+],
+"rep2": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q3": [
+			{
+		"id": "3",
+        "title": "Comment trouvez vous les supports de cours?"
+			}
+],
+"rep3": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q4": [
+			{
+		"id": "4",
+        "title": "Comment trouvez vous la charge de travail?"
+			}
+],
+"rep4": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+],
+"Q5": [
+			{
+		"id": "5",
+        "title": "Comment trouvez vous la connexion internet?"
+			}
+],
+"rep5": [
+    {
+        "choix1": "Tres satisfaisant",
+        "choix2": "Satisfaisant",
+        "choix3": "Peu satisfaisant",
+        "choix4": "Insatisfaisant"
+    }
+]
+
+}

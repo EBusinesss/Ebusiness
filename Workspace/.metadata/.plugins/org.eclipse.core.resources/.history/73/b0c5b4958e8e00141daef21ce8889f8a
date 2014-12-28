@@ -1,0 +1,15 @@
+package org.dao;
+
+import java.util.ArrayList;
+
+import org.entitees.Commande;
+import org.entitees.LigneCommande;
+import org.entitees.Produit;
+
+public interface CommandeInterface {
+
+
+	public Commande addCommandeAndLineCommande(Produit produit, int quantite, double prix);	
+	
+	public void executeCommande(Commande cmd);
+}

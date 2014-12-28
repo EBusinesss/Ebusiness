@@ -1,0 +1,49 @@
+var win = Ti.UI.currentWindow;
+
+
+var label = Ti.UI.createLabel({
+	text : 'Liste des Sondages ',
+	height : "auto",
+	width : "auto",
+	bottom: 1,
+	textAlign : 'center'
+});
+
+
+var winSondage1 = Titanium.UI.createWindow({  
+    title:'Sondages',
+    backgroundColor:'blue',
+    url: "/lib/sondage1.js"
+});
+
+var tableS = [ {leftImage:"/images/A.png",title: "Sondage 1",top: '5%', window:winSondage1}, {leftImage:"/images/B.png",title: "Sondage 2"}, {leftImage:"/images/C.png",title: "Sondage 3"}];
+var tableSondages = Ti.UI.createTableView({
+  data: tableS
+});
+
+
+win.add(label);
+win.add(tableSondages);
+
+//// Events handle
+
+
+var lastSelectedSondages =null;
+tableSondages.addEventListener('click',function(e){
+	
+  if (!e.rowData.selected) 
+  {
+    	if (lastSelectedSondages != null) 
+    	{
+    		lastSelectedSondages.setBackgroundColor('white');
+    		lastSelectedSondages.selected = false;
+    		lastSelectedSondages.hasCheck = false;
+    	};
+    	e.rowData.setBackgroundColor('purple');
+    	e.row.hasCheck = true;
+    	lastSelectedSondages = e.rowData;
+  };
+  e.rowData.selected = !e.rowData.selected;
+});
+
+//// End Events handle

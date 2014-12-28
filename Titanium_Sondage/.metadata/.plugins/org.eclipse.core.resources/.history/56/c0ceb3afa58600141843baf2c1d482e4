@@ -1,0 +1,75 @@
+{
+"Q1": [
+			{
+		"intitule": "Syst�me d'exploitation Windows",
+		"id": "1",
+        "title": "Comment trouvez vous l'ergonomie de ce syst�me d'exploitation?"
+			}
+],
+"rep1": [
+    {
+        "choix1": "0",
+        "choix2": "0",
+        "choix3": "0",
+        "choix4": "0"
+    }
+],
+
+"Q2": [
+			{
+		"id": "2",
+        "title": "Comment trouvez le temps de d�marrage du syst�me?"
+			}
+],
+"rep2": [
+    {
+        "choix1": "0",
+        "choix2": "0",
+        "choix3": "0",
+        "choix4": "0"
+    }
+],
+"Q3": [
+			{
+		"id": "3",
+        "title": "Comment trouvez vous le temps d'ex�cution des applications?"
+			}
+],
+"rep3": [
+    {
+        "choix1": "0",
+        "choix2": "0",
+        "choix3": "0",
+        "choix4": "0"
+    }
+],
+"Q4": [
+			{
+		"id": "4",
+        "title": "Comment trouvez vous le niveau de s�curit� du syst�me?"
+			}
+],
+"rep4": [
+    {
+        "choix1": "0",
+        "choix2": "0",
+        "choix3": "0",
+        "choix4": "0"
+    }
+],
+"Q5": [
+			{
+		"id": "5",
+        "title": "Comment trouvez vous la maniabilit� du syst�me?"
+			}
+],
+"rep5": [
+    {
+        "choix1": "0",
+        "choix2": "0",
+        "choix3": "0",
+        "choix4": "0"
+    }
+]
+
+}

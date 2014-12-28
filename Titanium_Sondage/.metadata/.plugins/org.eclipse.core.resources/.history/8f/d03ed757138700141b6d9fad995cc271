@@ -1,0 +1,44 @@
+var win = Ti.UI.currentWindow;
+
+
+var txt = '<h1>Développé par:</h1> <br>LAMGHARI Mohammed <br>MAAD Ali <br>MASOCCO Angelina';
+
+var labelDev = Ti.UI.createLabel({
+	text : txt,
+	height : "auto",
+	width : "auto",
+	top: '10%',
+	textAlign : 'center',
+	font:{
+    fontSize:18,
+    fontWeight:'bold'
+   		 },
+});
+
+win.add(labelDev);
+
+
+//// region Connexion au fichier json du questionnaire
+	var file = Titanium.Filesystem.getFile("/lib/sondages/Universite.json");    
+	var json, id, title ,question,questions,logo, repponse;
+	var preParseData = (file.read().text); 
+	//alert(preParseData);
+	var content = JSON.parse(preParseData); 	
+//// end region Connexion au fichier json du questionnaire
+
+
+//Save to file
+var json = JSON.stringify(content);
+alert(content);
+var file = Titanium.Filesystem.getFile("/lib/sondages/test.json");
+ 
+ var objet = {};
+objet.couleur = 'rouge';
+objet.forme = 'carré';
+objet.contient = ['téléphone', 'clés de voiture'];
+ 
+aler(JSON.stringify(objet) );
+
+
+
+file.write(json);

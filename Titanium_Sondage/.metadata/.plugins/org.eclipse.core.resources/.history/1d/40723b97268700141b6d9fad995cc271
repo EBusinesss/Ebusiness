@@ -1,0 +1,45 @@
+var file = Titanium.Filesystem.getFile("/ResBU.json");
+
+var preParseData = (file.read().text);
+
+alert(preParseData);
+
+var content = JSON.parse(preParseData);
+content.rep1[0].choix1 = '10';
+content.rep1[0].choix2 = '10';
+content.rep1[0].choix3 = '10';
+content.rep1[0].choix4 = '10';
+//alert(content);
+
+var fileRes = Ti.Filesystem.getFile(Ti.Filesystem.applicationDataDirectory,"/ResBU.json");
+
+if (!fileRes.exists) {
+	fileRes.createFile();
+}
+
+fileRes.write(JSON.stringify(content));
+
+
+var preParseData2 = (fileRes.read().text);
+alert(preParseData2);
+
+
+
+
+switch(repUser[1]) {
+    case 'Tres satisfaisant' :
+        content.rep1[0].choix1 += 1 ;
+        break;
+    case 'Satisfaisant' :
+        content.rep1[0].choix2 += 1 ;
+        break;
+    case 'Peu satisfaisant' :
+        content.rep1[0].choix3 += 1 ;
+        break;
+    case 'Insatisfaisant' :
+        content.rep1[0].choix4 += 1 ;
+        break;
+    default:
+        break;
+        
+}
