@@ -10,6 +10,7 @@ public interface CommandeInterface {
 	public void executeCommande(Commande cmd);
 	
 	public Commande ajoutCommandeAndLineCommande(Utilisateur user,Produit produit, int quantite, double prix);
+	public Commande supprimerLigneCmd(Utilisateur user, int idLcmd, int quantite,double prix);
 	
 	public void cleanCart(Utilisateur user);
 	

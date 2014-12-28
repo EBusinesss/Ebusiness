@@ -27,6 +27,7 @@ public class CommandeImpl implements CommandeInterface {
 	public Produit p;
 	public Commande cmd;
 	public ArrayList<LigneCommande> ligneCommande;
+	public LigneCommande itelLcmd;
 	
 	public Commande ajoutCommandeAndLineCommande(Utilisateur user,Produit produit, int quantite, double prix) {
 		if (ligneCommande == null || ligneCommande.isEmpty()){
@@ -39,7 +40,16 @@ public class CommandeImpl implements CommandeInterface {
 		cmd.addCommandeAndLineCommande(produit, quantite, prix);
 		return cmd;	
 	}
-
+	
+	public Commande supprimerLigneCmd(Utilisateur user, int idLcmd, int quantite,double prix){
+		itelLcmd = ligneCommande.get(idLcmd);
+		
+		if (cmd!=null && !ligneCommande.isEmpty()) {
+			cmd.modifierLigneCommande(itelLcmd, quantite, prix);
+		}
+		
+		return cmd;
+	}
 	public void cleanCart(Utilisateur user){
 		lcmdID = 0;
 		ligneCommande = new ArrayList<LigneCommande>(); 
