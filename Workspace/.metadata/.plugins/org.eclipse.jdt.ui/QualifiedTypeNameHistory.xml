@@ -31,7 +31,6 @@
 <fullyQualifiedTypeName name="org.dao.CategorieInterface"/>
 <fullyQualifiedTypeName name="org.dao.LigneCommandeInterface"/>
 <fullyQualifiedTypeName name="javax.ejb.EJB"/>
-<fullyQualifiedTypeName name="java.lang.String"/>
 <fullyQualifiedTypeName name="java.util.Collection"/>
 <fullyQualifiedTypeName name="org.entitees.Categorie"/>
 <fullyQualifiedTypeName name="java.io.Serializable"/>
@@ -40,4 +39,13 @@
 <fullyQualifiedTypeName name="org.entitees.Commande"/>
 <fullyQualifiedTypeName name="java.io.Writer"/>
 <fullyQualifiedTypeName name="org.entitees.Produit"/>
+<fullyQualifiedTypeName name="javax.naming.CommunicationException"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="javax.naming.directory.DirContext"/>
+<fullyQualifiedTypeName name="javax.naming.directory.InitialDirContext"/>
+<fullyQualifiedTypeName name="javax.naming.directory.SearchControls"/>
+<fullyQualifiedTypeName name="javax.naming.NamingEnumeration"/>
+<fullyQualifiedTypeName name="javax.naming.NamingException"/>
 </qualifiedTypeNameHistroy>

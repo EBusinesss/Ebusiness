@@ -10,19 +10,25 @@
 <link rel="stylesheet" type="text/css" href="./style/style-ml.css" />
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Insert title here</title>
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+
 </head>
-<body onload="chargerProduits()">
+<body onload="listOfProducts()">
 
 	<div id="wrapper">
 
 		<div id="header"></div>
 		<table id="barreMenu" class="barreMenu">
 			<tr>
-				<td></td>
 				<td id="enterSearch"><input type="text" id="textSearch"
-					name="mail" width="80"></td>
+					name="mail" width="80" onkeypress="autocomplet()"
+					onkeydown="if (event.keyCode==13) document.getElementById('goSearch').click()">
+				</td>
 				<td id="tdGoSearch">
-					<div id="goSearch" class="menuButton">chercher</div>
+					<div id="goSearch" class="menuButton" onclick="Rechercher()">chercher</div>
 				</td>
 				<td id="spaceSC"></td>
 				<td>
